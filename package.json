@@ -1,0 +1,15 @@
+{
+  "name": "mastersheetupdater",
+  "version": "1.0.0",
+  "description": "Viaplay Sheet Updater",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Fuller",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.2.1"
+  }
+}
