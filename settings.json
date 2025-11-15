@@ -9,6 +9,37 @@
   "specialsDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process",
   "specialsOldDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process\\old",
   "specialsProcessedDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\06_Specials_Processed",
+  "daysEnabled":
+    [
+      {
+        "day": "Sunday",
+        "enabled": false
+      },
+      {
+        "day": "Monday",
+        "enabled": true
+      },
+      {
+        "day": "Tuesday",
+        "enabled": true
+      },
+      {
+        "day": "Wednesday",
+        "enabled": true
+      },
+      {
+        "day": "Thursday",
+        "enabled": true
+      },
+      {
+        "day": "Friday",
+        "enabled": true
+      },
+      {
+        "day": "Saturday",
+        "enabled": false
+      }
+    ],
   "specialsLookAhead": 
     [
       {
