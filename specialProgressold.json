@@ -1,0 +1,31 @@
+{
+  "date": "2024-02-28T00:00:00.000Z",
+  "progress": [
+    {
+      "channel": "TV3D",
+      "files": [
+        {
+          "file": "TV3D240227B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3D240228B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3D240226B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3N",
+      "files": [
+        {
+          "file": "TV3NHD240228B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    }
+  ]
+}

@@ -12,23 +12,40 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Automated Excel Runner</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Automated Excel Runner</h1>
-    <p>👋</p>
     <h3 id="currentTime"></h3>
-    <h2 id="currentExcel"></h2>
-    <p id="info"></p>
-    <button id="btnRead">Read To Process</button>
-    <button id="btnTidyProcessed">Tidy Up Processed</button>
-    <button id="btnTidyOriginals">Tidy Up Originals</button>
-    <button id="btnRunFirstExcel">Run the first Excel file</button>
-    <button id="btnFileProcessed">File Processed</button>
-    <button id="btnCopyOriginals">Copy Originals to OneDrive</button>
-    <button id="btnCopyProcessed">Copy Processed to OneDrive</button>
-    <button id="btnCopySpecialsSheets">Copy Specials Sheets</button>
-    <button id="btnTest">Test Something</button>
-    <div id="txtStatus">Status</div>
+    <div id="all-page-block">
+      <h2 id="currentExcel"></h2>
+      <p id="info"></p>
+      <button id="btnToggleSchedule">Toggle Schedule</button>
+      <button id="btnToggleButtons">Toggle Buttons</button>
+      <div id="schedule">
+        <div class="row">
+          <div class="column" id = "column1"></div>
+          <div class="column" id = "column2"></div>
+          <div class="column" id = "column3"></div>
+        </div>
+      </div>
+      <div id = "mainStatus"></div>
+      <div id="theButtons">
+        <button id="btnRead">Copy To Process One Drive to Dropbox</button>
+        <button id="btnTidyProcessed">Tidy Up Processed</button>
+        <button id="btnTidyOriginals">Tidy Up Originals</button>
+        <button id="btnRunFirstExcel">Run the first Excel file</button>
+        <button id="btnFileProcessed">File Processed</button>
+        <button id="btnCopyOriginals">Copy Originals to OneDrive</button>
+        <button id="btnCopyProcessed">Copy Processed to OneDrive</button>
+        <button id="btnCopySpecialsSheets">Copy Specials Sheets</button>
+        <button id="btnDeleteToProcessOneDrive">Delete To Process OneDrive</button>
+        <button id="btnRunSpecialExcel">Run the first Specials Excel file</button>
+        <button id="btnDeleteOldFolders">Delete Folders Over Two Weeks Old</button>
+        <button id="btnTest">Test Something</button>
+      </div>
+      <div id="txtStatus">Status</div>
+  </div>
   </body>
   <script src="./renderer.js"></script>
 </html>

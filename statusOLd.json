@@ -1,0 +1,310 @@
+{
+  "date": "2025-04-10T14:50:48.937Z",
+  "oneDriveToProcess": 23,
+  "dropboxToProcess": 23,
+  "copyDetails": [
+    {
+      "time": "2025-04-10T08:00:16.322Z",
+      "message": "Copying 'To Process' files from OneDrive to Dropbox",
+      "details": [
+        "Files copied: 11",
+        {
+          "filename": "MASTER_PULS_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_SEE_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV10S_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV3D_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV3N_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV3PLUSDEN_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV3PLUSNOR_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV3S_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV6N_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV6S_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "MASTER_TV8S_08_NOVEMBER_2024.xlsm",
+          "isModified": false
+        }
+      ]
+    },
+    {
+      "time": "2025-04-10T08:25:55.511Z",
+      "message": "Copying 'To Process' files from OneDrive to Dropbox",
+      "details": [
+        "Files copied: 12",
+        {
+          "filename": "TV3D250413A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3D250414A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3NHD250413A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3NHD250414A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3PLUSNOR250413A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3PLUSNOR250414A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3PLUS_250413A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3PLUS_250414A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3S_250413A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV3S_250414A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV6S_250413A.xlsm",
+          "isModified": false
+        },
+        {
+          "filename": "TV6S_250414A.xlsm",
+          "isModified": false
+        }
+      ]
+    }
+  ],
+  "specialProgress": [
+    {
+      "channel": "TV3+D",
+      "lookaheadDate": "2025-04-11T23:00:00.000Z",
+      "lookaheadDateV2": "2025-04-10T23:00:00.000Z",
+      "copied": 1,
+      "copiedV2": 1,
+      "processed": 1,
+      "processedV2": 1,
+      "lookaheadCopied": 0,
+      "lookaheadCopiedV2": 1,
+      "status": "Not Ready",
+      "statusV2": "Not Ready"
+    },
+    {
+      "channel": "TV3D",
+      "lookaheadDate": "2025-04-11T23:00:00.000Z",
+      "lookaheadDateV2": "2025-04-10T23:00:00.000Z",
+      "copied": 0,
+      "copiedV2": 0,
+      "processed": 2,
+      "processedV2": 2,
+      "lookaheadCopied": 0,
+      "lookaheadCopiedV2": 1,
+      "status": "Not Ready",
+      "statusV2": "Ready"
+    },
+    {
+      "channel": "TV3N",
+      "lookaheadDate": "2025-04-11T23:00:00.000Z",
+      "lookaheadDateV2": "2025-04-11T23:00:00.000Z",
+      "copied": 2,
+      "copiedV2": 2,
+      "processed": 1,
+      "processedV2": 1,
+      "lookaheadCopied": 1,
+      "lookaheadCopiedV2": 1,
+      "status": "Not Ready",
+      "statusV2": "Not Ready"
+    },
+    {
+      "channel": "TV3S",
+      "lookaheadDate": "2025-04-11T23:00:00.000Z",
+      "lookaheadDateV2": "2025-04-10T23:00:00.000Z",
+      "copied": 1,
+      "copiedV2": 1,
+      "processed": 1,
+      "processedV2": 1,
+      "lookaheadCopied": 0,
+      "lookaheadCopiedV2": 1,
+      "status": "Not Ready",
+      "statusV2": "Not Ready"
+    },
+    {
+      "channel": "TV3+N",
+      "lookaheadDate": "2025-04-11T23:00:00.000Z",
+      "lookaheadDateV2": "2025-04-11T23:00:00.000Z",
+      "copied": 2,
+      "copiedV2": 2,
+      "processed": 1,
+      "processedV2": 1,
+      "lookaheadCopied": 1,
+      "lookaheadCopiedV2": 1,
+      "status": "Not Ready",
+      "statusV2": "Not Ready"
+    },
+    {
+      "channel": "TV6S",
+      "lookaheadDate": "2025-04-11T23:00:00.000Z",
+      "lookaheadDateV2": "2025-04-10T23:00:00.000Z",
+      "copied": 2,
+      "copiedV2": 2,
+      "processed": 1,
+      "processedV2": 1,
+      "lookaheadCopied": 0,
+      "lookaheadCopiedV2": 1,
+      "status": "Not Ready",
+      "statusV2": "Not Ready"
+    }
+  ],
+  "sheetProgress": [
+    {
+      "name": "MASTER_PULS_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_SEE_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV10S_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV3D_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV3N_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV3PLUSDEN_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV3PLUSNOR_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV3S_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV6N_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV6S_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "MASTER_TV8S_08_NOVEMBER_2024.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3D250413A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3D250414A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3NHD250413A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3NHD250414A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3PLUSNOR250413A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3PLUSNOR250414A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3PLUS_250413A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3PLUS_250414A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3S_250413A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV3S_250414A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV6S_250413A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    },
+    {
+      "name": "TV6S_250414A.xlsm",
+      "readyForProcess": true,
+      "processed": false
+    }
+  ]
+}

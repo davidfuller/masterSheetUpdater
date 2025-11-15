@@ -1,0 +1,445 @@
+{
+  "toProcessOneDrive": "C:\\Users\\David\\OneDrive\\Encompass\\Sheet Update\\01_To_Process",
+  "toCheckDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\00_Check",
+  "processedDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\02_Processed",
+  "processedOneDrive": "C:\\Users\\David\\OneDrive\\Encompass\\Sheet Update\\02_Processed",
+  "originalsDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\03_Originals",
+  "originalsOneDrive": "C:\\Users\\David\\OneDrive\\Encompass\\Sheet Update\\03_Originals",
+  "toProcessDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\01_To_Process",
+  "specialsDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process",
+  "specialsOldDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process\\old",
+  "specialsProcessedDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\06_Specials_Processed",
+  "specialsLookAhead": 
+    [
+      {
+        "day": "Sunday",
+        "lookahead": 1,
+        "cutOffTime": "18:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3N",
+              "lookahead": 1
+            },
+            { "channel":  "TV3S",
+              "lookahead": 1
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 1
+            },
+            { "channel":  "TV6S",
+              "lookahead": 1
+            }
+          ]
+      },
+      {
+        "day": "Monday",
+        "lookahead": 1,
+        "cutOffTime": "19:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3N",
+              "lookahead": 1
+            },
+            { "channel":  "TV3S",
+              "lookahead": 1
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 1
+            },
+            { "channel":  "TV6S",
+              "lookahead": 1
+            }
+          ]
+      },
+      {
+        "day": "Tuesday",
+        "lookahead": 1,
+        "cutOffTime": "19:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3N",
+              "lookahead": 1
+            },
+            { "channel":  "TV3S",
+              "lookahead": 1
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 1
+            },
+            { "channel":  "TV6S",
+              "lookahead": 1
+            }
+          ]
+      },
+      {
+        "day": "Wednesday",
+        "lookahead": 1,
+        "cutOffTime": "19:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3D",
+              "lookahead": 1
+            },
+            { "channel":  "TV3N",
+              "lookahead": 1
+            },
+            { "channel":  "TV3S",
+              "lookahead": 1
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 1
+            },
+            { "channel":  "TV6S",
+              "lookahead": 1
+            }
+          ]
+      },
+      {
+        "day": "Thursday",
+        "lookahead": 2,
+        "cutOffTime": "19:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 2
+            },
+            { "channel":  "TV3D",
+              "lookahead": 2
+            },
+            { "channel":  "TV3N",
+              "lookahead": 2
+            },
+            { "channel":  "TV3S",
+              "lookahead": 1
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 1
+            },
+            { "channel":  "TV6S",
+              "lookahead": 1
+            }
+          ]
+      },
+      {
+        "day": "Friday",
+        "lookahead": 3,
+        "cutOffTime": "19:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 3
+            },
+            { "channel":  "TV3D",
+              "lookahead": 3
+            },
+            { "channel":  "TV3N",
+              "lookahead": 3
+            },
+            { "channel":  "TV3S",
+              "lookahead": 3
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 3
+            },
+            { "channel":  "TV6S",
+              "lookahead": 3
+            }
+          ]
+      },
+      {
+        "day": "Saturday",
+        "lookahead": 2,
+        "cutOffTime": "18:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 2
+            },
+            { "channel":  "TV3D",
+              "lookahead": 2
+            },
+            { "channel":  "TV3N",
+              "lookahead": 2
+            },
+            { "channel":  "TV3S",
+              "lookahead": 2
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 2
+            },
+            { "channel":  "TV6S",
+              "lookahead": 2
+            }
+          ]
+      }
+    ],
+  "specialsSheets":
+    [
+      {
+        "channel": "TV3+D",
+        "folder": "\\\\10.254.31.51\\schedules\\3Plus Denmark\\Prep_Spreadsheets",
+        "pattern": "TV3PLUS_[ddmmyyv]",
+        "prefix": "TV3PLUS_"
+      },
+      {
+        "channel": "TV3D",
+        "folder": "\\\\10.254.31.51\\schedules\\TV3 Denmark\\Prep_Spreadsheets",
+        "pattern": "TV3D[ddmmyyv]",
+        "prefix": "TV3D"
+      },
+      {
+        "channel": "TV3N",
+        "folder": "\\\\10.254.31.51\\schedules\\TV3 Norway\\Prep_Spreadsheets",
+        "pattern": "TV3NHD[ddmmyyv]",
+        "prefix": "TV3NHD"
+      },
+      {
+        "channel": "TV3S",
+        "folder": "\\\\10.254.31.51\\schedules\\TV3 Sweden\\Prep_Spreadsheets",
+        "pattern": "TV3S_[ddmmyyv]",
+        "prefix": "TV3S_"
+      },
+      {
+        "channel": "TV3+N",
+        "folder": "\\\\10.254.31.51\\schedules\\TV3PLUSNOR\\Prep_Spreadsheets",
+        "pattern": "TV3PLUSNOR[ddmmyyv]",
+        "prefix": "TV3PLUSNOR"
+      },
+      {
+        "channel": "TV6S",
+        "folder": "\\\\10.254.31.51\\schedules\\TV6 Sweden\\Prep_Spreadsheets",
+        "pattern": "TV6S_[ddmmyyv]",
+        "prefix": "TV6S_"
+      }
+    ],
+    "schedule":
+      [
+        {
+          "event": "2",
+          "name": "Copy OneDrive 'To Process' to Dropbox",
+          "functionName": "copyOneDriveToProcessToDropbox",
+          "startTime": "09:00:00",
+          "endTime": "15:14:59",
+          "startCondition": "Time Only",
+          "endCondition": 
+            {},
+          "successfulMessage": "copyOneDriveToProcessToDropboxSuccessfull",
+          "errorMessage": "copyOneDriveToProcessToDropboxFailed",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "3",
+          "name": "Tidy Up Originals Dropbox",
+          "functionName": "tidyOriginalsDropbox",
+          "startTime": "09:00:00",
+          "endTime": "16:00:00",
+          "startCondition": "Time Only",
+          "endCondition": 
+            {},
+          "successfulMessage": "originalsTidyiedDropbox",
+          "errorMessage": "failedOrignalsTidiedDropox",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "4",
+          "name": "Tidy Up Originals One Drive",
+          "functionName": "tidyOriginalsOneDrive",
+          "startTime": "15:00:00",
+          "endTime": "16:00:00",
+          "startCondition": "Time Only",
+          "endCondition": 
+            {},
+          "successfulMessage": "originalsTidyiedOneDrive",
+          "errorMessage": "failedOrignalsTidiedOneDrive",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "5",
+          "name": "Tidy Up Processed Dropbox",
+          "functionName": "tidyProcessedDropbox",
+          "startTime": "09:05:00",
+          "endTime": "16:00:00",
+          "startCondition": "originalsTidyiedDropbox",
+          "endCondition": 
+            {},
+          "successfulMessage": "processedTidyiedDropbox",
+          "errorMessage": "failedProcessedTidiedDropbox",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "6",
+          "name": "Tidy Up Processed One Drive",
+          "functionName": "tidyProcessedOneDrive",
+          "startTime": "15:10:00",
+          "endTime": "16:00:00",
+          "startCondition": "originalsTidyiedOneDrive",
+          "endCondition": 
+            {},
+          "successfulMessage": "processedTidyiedOneDrive",
+          "errorMessage": "failedProcessedTidiedOneDrive",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "7",
+          "name": "Delete Old Folders",
+          "functionName": "deleteOldFolders",
+          "startTime": "15:20:00",
+          "endTime": "16:00:00",
+          "startCondition": "processedTidyiedOneDrive",
+          "endCondition": 
+            {},
+          "successfulMessage": "oldFoldersDeleted",
+          "errorMessage": "failedOldFoldersDeleted",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "8",
+          "name": "Copy Specials Sheets",
+          "functionName": "copySpecialSheets",
+          "startTime": "09:00:00",
+          "endTime": "21:00:00",
+          "startCondition": "Time Only",
+          "endCondition": 
+            {
+              "comparison": "allCopied"
+            },
+          "successfulMessage": "specialSheetsCopied",
+          "errorMessage": "notAllSpecialSheetsCopied",
+          "pollTimeMinutes": "3"
+        },
+        {
+          "event": "9",
+          "name": "Start Processing Specials Sheets",
+          "functionName": "startProcessingSpecialSheets",
+          "startTime": "14:00:00",
+          "endTime": "21:00:00",
+          "startCondition": "specialSheetsCopied",
+          "endCondition": 
+            {
+              "comparison": "allCopied"
+            },
+          "successfulMessage": "processingSpecialSheetsStarted",
+          "errorMessage": "processingSpecialSheetsStartedNotStarted",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "10",
+          "name": "Check Processing Specials Sheets Finished",
+          "functionName": "isProcessingSpecialSheetsFinished",
+          "startTime": "15:15:00",
+          "endTime": "21:00:00",
+          "startCondition": "processingSpecialSheetsStarted",
+          "endCondition": 
+            {
+              "comparison": "allCopied"
+            },
+          "successfulMessage": "processingSpecialSheetsFinished",
+          "errorMessage": "processingSpecialSheetsNotFinished",
+          "pollTimeMinutes": "3"
+        },
+        {
+          "event": "11",
+          "name": "Start Excel Processing",
+          "functionName": "startExcelProcessing",
+          "startTime": "15:15:00",
+          "endTime": "29:59:59",
+          "startCondition": "processingSpecialSheetsFinished",
+          "endCondition": 
+            {
+              "comparison": "allCopied"
+            },
+          "successfulMessage": "excelProcessingStarted",
+          "errorMessage": "excelProcessingNotStarted",
+          "pollTimeMinutes": "3"
+        },
+        {
+          "event": "12",
+          "name": "Check Processing Excel Finished",
+          "functionName": "isProcessingExcelFinished",
+          "startTime": "18:00:00",
+          "endTime": "29:59:59",
+          "startCondition": "excelProcessingStarted",
+          "endCondition": 
+            {
+              "comparison": "equal",
+              "value": "0"
+            },
+          "successfulMessage": "processingExcelFinished",
+          "errorMessage": "processingExcelNotFinished",
+          "pollTimeMinutes": "10"
+        },
+        {
+          "event": "13",
+          "name": "Copy Originals Dropbox to OneDrive",
+          "functionName": "copyOriginalsDropboxToOneDrive",
+          "startTime": "18:00:00",
+          "endTime": "29:59:59",
+          "startCondition": "processingExcelFinished",
+          "endCondition": 
+            {},
+          "successfulMessage": "copyiedOriginalsDropboxToOneDrive",
+          "errorMessage": "failedCopyiedOriginalsDropboxToOneDrive",
+          "pollTimeMinutes": "3"
+        },
+        {
+          "event": "14",
+          "name": "Copy Processed Dropbox to OneDrive",
+          "functionName": "copyProcessedDropboxToOneDrive",
+          "startTime": "18:00:00",
+          "endTime": "29:59:59",
+          "startCondition": "copyiedOriginalsDropboxToOneDrive",
+          "endCondition": 
+            {},
+          "successfulMessage": "copyiedProcessedDropboxToOneDrive",
+          "errorMessage": "failedCopyiedProcessedDropboxToOneDrive",
+          "pollTimeMinutes": "3"
+        },
+        {
+          "event": "15",
+          "name": "Delete 'To Process' OneDrive",
+          "functionName": "deleteToProcessOneDrive",
+          "startTime": "18:00:00",
+          "endTime": "29:59:59",
+          "startCondition": "copyiedProcessedDropboxToOneDrive",
+          "endCondition": 
+            {},
+          "successfulMessage": "toProcessOneDriveDeleted",
+          "errorMessage": "toProcessOneDriveNotDeleted",
+          "pollTimeMinutes": "3"
+        },
+        {
+          "event": "16",
+          "name": "Copy Masters from 'Processed' to 'To_Process'",
+          "functionName": "copyMastersToToProcessOneDrive",
+          "startTime": "18:00:00",
+          "endTime": "29:59:59",
+          "startCondition": "toProcessOneDriveDeleted",
+          "endCondition": 
+            {},
+          "successfulMessage": "mastersCopiedToToProcess",
+          "errorMessage": "mastersNotCopiedToToProcess",
+          "pollTimeMinutes": "3"
+        }    
+      ]
+}

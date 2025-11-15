@@ -1,0 +1,103 @@
+{
+  "date": "2025-11-15T00:00:00.000Z",
+  "progress": [
+    {
+      "channel": "TV3+D",
+      "files": [
+        {
+          "file": "TV3PLUS_251115C.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3PLUS_251117B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3D",
+      "files": [
+        {
+          "file": "TV3D Standby October 2025.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3D251115B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3D251116B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3D251117B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3N",
+      "files": [
+        {
+          "file": "TV3NHD251115B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3NHD251116B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3NHD251117B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3S",
+      "files": [
+        {
+          "file": "TV3S_251115B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3S_251116B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3S_251117B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3+N",
+      "files": [
+        {
+          "file": "TV3PLUSNOR251116B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3PLUSNOR251117B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV6S",
+      "files": [
+        {
+          "file": "TV6S_251115B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV6S_251116B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV6S_251117B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    }
+  ]
+}

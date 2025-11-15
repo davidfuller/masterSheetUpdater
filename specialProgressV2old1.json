@@ -1,0 +1,95 @@
+{
+  "date": "2025-04-09T23:00:00.000Z",
+  "progress": [
+    {
+      "channel": "TV3+D",
+      "files": [
+        {
+          "file": "TV3PLUS_250411B.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV3PLUS_250410B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3D",
+      "files": [
+        {
+          "file": "TV3D250410B.xlsm",
+          "status": "Processed"
+        },
+        {
+          "file": "TV3D250411B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3N",
+      "files": [
+        {
+          "file": "TV3NHD250411B.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV3NHD250412B.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV3NHD250410B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3S",
+      "files": [
+        {
+          "file": "TV3S_250411B.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV3S_250410B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV3+N",
+      "files": [
+        {
+          "file": "TV3PLUSNOR250411B.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV3PLUSNOR250412B.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV3PLUSNOR250410B.xlsm",
+          "status": "Processed"
+        }
+      ]
+    },
+    {
+      "channel": "TV6S",
+      "files": [
+        {
+          "file": "TV6S_250410N.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV6S_250411A.xlsm",
+          "status": "Copied"
+        },
+        {
+          "file": "TV6S_250410A.xlsm",
+          "status": "Processed"
+        }
+      ]
+    }
+  ]
+}
