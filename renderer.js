@@ -1544,7 +1544,7 @@ async function displayMainStatus(){
   const startSpecialsEventDetails = await getEventDetails(eventStartProcessingSpecialSheets);
   const startExcelProcessingDetails = await getEventDetails(eventStartExcelProcessing);
   divMainStatus.innerText = "Status at: " + mainStatus.date.toLocaleTimeString();
-  divMainStatis.innerText += "\r\n " + mainStatus.todayEnabled.day;
+  divMainStatus.innerText += "\r\n " + mainStatus.todayEnabled.day;
   if (mainStatus.todayEnabled.enabled){
     divMainStatus.innerText += ": Enabled"
   } else {
