@@ -632,37 +632,43 @@ async function mainEventLoop(){
   await displayMainStatus();
   
   statusList.innerText = 'Now: ' + new Date();
-  let numExcel = await checkDropboxToProcess(false);
-  statusList.innerText += '\r\n Files remaining: ' + numExcel;
-  statusList.innerText += '\r\n Current Conditions:';
-  let objConditions = await readConditions();
-  for (let condition of objConditions.conditions){
-    statusList.innerText += '\r\n' + condition;
-  }
-
-  statusList.innerText += '\r\n Current Poll Times:';
-  for (let poll of pollTimes){
-    statusList.innerText += '\r\n' + poll.time + " - " + poll.name;
-  }
-
-  if (!doingMainLoop){
-    doingMainLoop = true;
-    const theSettings = await getSettings();
-    for(let myEvent of theSettings.schedule){
-      console.log(new Date().toLocaleTimeString() + ": " + myEvent.event + ": " + myEvent.name);
-      console.log(new Date().toLocaleTimeString() + ": " + timeFromString(myEvent.startTime) + ": " + timeFromString(myEvent.endTime));
-      let runningEvent
-      if (inTimeRange(myEvent)){
-        if (!await alreadyDone(myEvent)){
-          if (await isStartConditionMet(myEvent)){
-            if (pollTimeGood(myEvent)){
-              await startTheEvent(myEvent);
+  
+  let isEnabled = await todayEnabled();
+  if (!isEnabled.enabled){
+    statusList.innerText += "\r\n Not enabled today"
+  } else {
+    let numExcel = await checkDropboxToProcess(false);
+    statusList.innerText += '\r\n Files remaining: ' + numExcel;
+    statusList.innerText += '\r\n Current Conditions:';
+    let objConditions = await readConditions();
+    for (let condition of objConditions.conditions){
+      statusList.innerText += '\r\n' + condition;
+    }
+  
+    statusList.innerText += '\r\n Current Poll Times:';
+    for (let poll of pollTimes){
+      statusList.innerText += '\r\n' + poll.time + " - " + poll.name;
+    }
+  
+    if (!doingMainLoop){
+      doingMainLoop = true;
+      const theSettings = await getSettings();
+      for(let myEvent of theSettings.schedule){
+        console.log(new Date().toLocaleTimeString() + ": " + myEvent.event + ": " + myEvent.name);
+        console.log(new Date().toLocaleTimeString() + ": " + timeFromString(myEvent.startTime) + ": " + timeFromString(myEvent.endTime));
+        let runningEvent
+        if (inTimeRange(myEvent)){
+          if (!await alreadyDone(myEvent)){
+            if (await isStartConditionMet(myEvent)){
+              if (pollTimeGood(myEvent)){
+                await startTheEvent(myEvent);
+              }
             }
           }
         }
       }
+      doingMainLoop = false;
     }
-    doingMainLoop = false;
   }
 }
 
@@ -1109,6 +1115,7 @@ async function displaySchedule(){
 async function checkStatus(){
   let myStatus = {}
   myStatus.date = new Date();
+  myStatus.todayEnabled = await todayEnabled()
   myStatus.oneDriveToProcess = await checkOneDriveToProcess(false);
   myStatus.dropboxToProcess = await checkDropboxToProcess(false);
   myStatus.copyDetails = await findMessageInLog(msgCopyToProcessOneDriveToDropbox)
@@ -1276,6 +1283,20 @@ async function getTodaySpecials(){
   const d = new Date();
   let day = weekday[d.getDay()];
   let theDays = theSettings.specialsLookAhead;
+  for (let theDay of theDays){
+    if (theDay.day == day){
+      return theDay;
+    }
+  }
+  return null;
+}
+
+async function todayEnabled(){
+  const theSettings = await getSettings();
+  const weekday = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"];
+  const d = new Date();
+  let day = weekday[d.getDay()];
+  let theDays = theSettings.daysEnabled;
   for (let theDay of theDays){
     if (theDay.day == day){
       return theDay;
@@ -1523,6 +1544,12 @@ async function displayMainStatus(){
   const startSpecialsEventDetails = await getEventDetails(eventStartProcessingSpecialSheets);
   const startExcelProcessingDetails = await getEventDetails(eventStartExcelProcessing);
   divMainStatus.innerText = "Status at: " + mainStatus.date.toLocaleTimeString();
+  divMainStatis.innerText += "\r\n " + mainStatus.todayEnabled.day;
+  if (mainStatus.todayEnabled.enabled){
+    divMainStatus.innerText += ": Enabled"
+  } else {
+    divMainStatus.innerText += ": Not enabled"
+  }
   divMainStatus.innerText += "\r\n To process files on OneDrive: " + mainStatus.oneDriveToProcess;
   divMainStatus.innerText += "\r\n To process files on Dropbox: " + mainStatus.dropboxToProcess;
   for (let detail of mainStatus.copyDetails){
