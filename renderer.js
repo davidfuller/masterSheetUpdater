@@ -1545,34 +1545,34 @@ async function displayMainStatus(){
   const startExcelProcessingDetails = await getEventDetails(eventStartExcelProcessing);
   divMainStatus.innerText = "Status at: " + mainStatus.date.toLocaleTimeString();
   divMainStatus.innerText += "\r\n " + mainStatus.todayEnabled.day;
-  if (mainStatus.todayEnabled.enabled){
-    divMainStatus.innerText += ": Enabled"
-  } else {
+  if (!mainStatus.todayEnabled.enabled){
     divMainStatus.innerText += ": Not enabled"
-  }
-  divMainStatus.innerText += "\r\n To process files on OneDrive: " + mainStatus.oneDriveToProcess;
-  divMainStatus.innerText += "\r\n To process files on Dropbox: " + mainStatus.dropboxToProcess;
-  for (let detail of mainStatus.copyDetails){
-    divMainStatus.innerText += "\r\n" + detail.details[0] + " at " + new Date(detail.time).toLocaleTimeString();
-  }
-  divMainStatus.innerText += "\r\n Number of Special Sheets: " + specialsStats(mainStatus.specialProgress);
-
-  if (new Date().getTime() < startSpecialsEventDetails.startTime.getTime()){
-    divMainStatus.innerText += "\r\n Specials Processing will start at: " + startSpecialsEventDetails.startTime.toLocaleTimeString() + " if all lookahead sheets copied."
   } else {
-    if (!startSpecialsEventDetails.startConditionMet && startSpecialsEventDetails.inTimeRange){
-      let myCuttOff = await cutOffTime();
-      console.log("cutOfff")
-      console.log(myCuttOff);
-      divMainStatus.innerText += "\r\n Specials Processing will start once all lookahead sheets copied, or if cut-off time is passed: " + myCuttOff.toLocaleTimeString();
+    divMainStatus.innerText += ": Enabled"
+    divMainStatus.innerText += "\r\n To process files on OneDrive: " + mainStatus.oneDriveToProcess;
+    divMainStatus.innerText += "\r\n To process files on Dropbox: " + mainStatus.dropboxToProcess;
+    for (let detail of mainStatus.copyDetails){
+      divMainStatus.innerText += "\r\n" + detail.details[0] + " at " + new Date(detail.time).toLocaleTimeString();
     }
-  }
+    divMainStatus.innerText += "\r\n Number of Special Sheets: " + specialsStats(mainStatus.specialProgress);
 
-  if (new Date().getTime() < startExcelProcessingDetails.startTime.getTime()){
-    divMainStatus.innerText += "\r\n Excel Processing will start at: " + startExcelProcessingDetails.startTime.toLocaleTimeString() + " if all special sheets processed"
-  } else {
-    if (!startExcelProcessingDetails.startConditionMet && startExcelProcessingDetails.inTimeRange){
-      divMainStatus.innerText += "\r\n Excel Processing will start once all special sheets processed."
+    if (new Date().getTime() < startSpecialsEventDetails.startTime.getTime()){
+      divMainStatus.innerText += "\r\n Specials Processing will start at: " + startSpecialsEventDetails.startTime.toLocaleTimeString() + " if all lookahead sheets copied."
+    } else {
+      if (!startSpecialsEventDetails.startConditionMet && startSpecialsEventDetails.inTimeRange){
+        let myCuttOff = await cutOffTime();
+        console.log("cutOfff")
+        console.log(myCuttOff);
+        divMainStatus.innerText += "\r\n Specials Processing will start once all lookahead sheets copied, or if cut-off time is passed: " + myCuttOff.toLocaleTimeString();
+      }
+    }
+
+    if (new Date().getTime() < startExcelProcessingDetails.startTime.getTime()){
+      divMainStatus.innerText += "\r\n Excel Processing will start at: " + startExcelProcessingDetails.startTime.toLocaleTimeString() + " if all special sheets processed"
+    } else {
+      if (!startExcelProcessingDetails.startConditionMet && startExcelProcessingDetails.inTimeRange){
+        divMainStatus.innerText += "\r\n Excel Processing will start once all special sheets processed."
+      }
     }
   }
 }
