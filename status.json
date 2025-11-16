@@ -1,5 +1,9 @@
 {
-  "date": "2025-11-15T08:16:45.526Z",
+  "date": "2025-11-16T18:38:54.389Z",
+  "todayEnabled": {
+    "day": "Sunday",
+    "enabled": false
+  },
   "oneDriveToProcess": 11,
   "dropboxToProcess": 0,
   "copyDetails": [],
