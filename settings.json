@@ -162,13 +162,13 @@
               "lookahead": 2
             },
             { "channel":  "TV3S",
-              "lookahead": 1
+              "lookahead": 2
             },
             { "channel":  "TV3+N",
-              "lookahead": 1
+              "lookahead": 2
             },
             { "channel":  "TV6S",
-              "lookahead": 1
+              "lookahead": 2
             }
           ]
       },

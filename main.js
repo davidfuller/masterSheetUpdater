@@ -22,8 +22,17 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   ipcMain.handle("readFileSync", (event, filePath) => {
-    return fs.readFileSync(filePath, 'utf8');
+    let doIt = false;
+    try {
+      doIt = fs.existsSync(filePath);
+    } catch (err) {
+      console.log('Error in file exists:', filePath, err);
+    }
+    if (doIt){
+      return fs.readFileSync(filePath, 'utf8');
+    }
   });
+  
   ipcMain.handle('readdirSyncExcel', (event, path) => {
     let doIt = false;
     try {
