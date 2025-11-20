@@ -581,11 +581,16 @@ async function readLogFile(){
   console.log(filename);
   if (await window.fs.existsSync(filename)){
     const data = await window.fs.readFileSync(filename);
-    return JSON.parse(data);
+    if (data === undefined){
+      let myLog = {};
+      myLog.event = [];
+      return myLog;
+    } else {
+      return JSON.parse(data);
+    }
   } else {
     let myLog = {};
     myLog.event = [];
-    console.log(myLog);
     return myLog;
   }
 }
