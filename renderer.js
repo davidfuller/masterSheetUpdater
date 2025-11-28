@@ -415,7 +415,11 @@ async function saveJson(myObject, filename){
 async function readJson(filename){
   if (await window.fs.existsSync(filename)){
     const data = await window.fs.readFileSync(filename);
-    return JSON.parse(data);
+    if (data != undefined){
+      return JSON.parse(data);
+    } else {
+      return null;
+    }
   } else {
     return null;
   }

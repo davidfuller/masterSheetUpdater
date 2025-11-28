@@ -73,11 +73,23 @@ app.whenReady().then(() => {
     }
     return newFolderName;
   });
+  
   ipcMain.handle("moveFileSync", (event, sourceFolder, sourceFilename, destinationFolder, destinationFilename) => {
+    let doIt = false;
+    let doItDest = false;
     const source = path.join(sourceFolder,sourceFilename);
     const destination = path.join(destinationFolder, destinationFilename);
-    fs.renameSync(source, destination);
+    try {
+      doIt = fs.existsSync(source)
+      doItDest = fs.existsSync(destination);
+    } catch (err) {
+      console.log('Error in file exists:', path, err);
+    }
+    if (doIt & doItDest){
+      fs.renameSync(source, destination);
+    }
   });
+
   ipcMain.handle("runFirstExcel", (event, folder, filename) => {
     let theBat = path.join(__dirname,'startExcel.bat')
     let excelFile = path.join(folder, filename)
