@@ -81,11 +81,10 @@ app.whenReady().then(() => {
     const destination = path.join(destinationFolder, destinationFilename);
     try {
       doIt = fs.existsSync(source)
-      doItDest = fs.existsSync(destination);
     } catch (err) {
       console.log('Error in file exists:', path, err);
     }
-    if (doIt & doItDest){
+    if (doIt){
       fs.renameSync(source, destination);
     }
   });

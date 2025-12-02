@@ -1303,8 +1303,17 @@ async function getTodaySpecials(){
 async function todayEnabled(){
   const theSettings = await getSettings();
   const weekday = ["Sunday", "Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday"];
-  const d = new Date();
-  let day = weekday[d.getDay()];
+  let d = new Date();
+  let h = d.getHours()
+  let offset = 0
+  if (h < 6){
+    offset = -1
+  } 
+  let dayNo = d.getDay() + offset
+  if (dayNo < 0){
+    dayNo = dayNo+6;
+  }
+  let day = weekday[dayNo];
   let theDays = theSettings.daysEnabled;
   for (let theDay of theDays){
     if (theDay.day == day){
