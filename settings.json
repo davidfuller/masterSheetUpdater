@@ -1,14 +1,14 @@
 {
   "toProcessOneDrive": "C:\\Users\\David\\OneDrive\\Encompass\\Sheet Update\\01_To_Process",
-  "toCheckDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\00_Check",
-  "processedDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\02_Processed",
+  "toCheckDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\00_Check",
+  "processedDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\02_Processed",
   "processedOneDrive": "C:\\Users\\David\\OneDrive\\Encompass\\Sheet Update\\02_Processed",
-  "originalsDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\03_Originals",
+  "originalsDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\03_Originals",
   "originalsOneDrive": "C:\\Users\\David\\OneDrive\\Encompass\\Sheet Update\\03_Originals",
-  "toProcessDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\01_To_Process",
-  "specialsDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process",
-  "specialsOldDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process\\old",
-  "specialsProcessedDropbox": "\\\\dil.local\\dropbox\\NEG\\Auto_Update\\06_Specials_Processed",
+  "toProcessDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\01_To_Process",
+  "specialsDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process",
+  "specialsOldDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\05_Specials_To_Process\\old",
+  "specialsProcessedDropbox": "\\\\alpaca\\dropbox\\NEG\\Auto_Update\\06_Specials_Processed",
   "daysEnabled":
     [
       {
@@ -122,32 +122,6 @@
       },
       {
         "day": "Wednesday",
-        "lookahead": 1,
-        "cutOffTime": "19:00:00",
-        "channelLookahead":
-          [
-            { "channel":  "TV3+D",
-              "lookahead": 1
-            },
-            { "channel":  "TV3D",
-              "lookahead": 1
-            },
-            { "channel":  "TV3N",
-              "lookahead": 1
-            },
-            { "channel":  "TV3S",
-              "lookahead": 1
-            },
-            { "channel":  "TV3+N",
-              "lookahead": 1
-            },
-            { "channel":  "TV6S",
-              "lookahead": 1
-            }
-          ]
-      },
-      {
-        "day": "Thursday",
         "lookahead": 2,
         "cutOffTime": "19:00:00",
         "channelLookahead":
@@ -159,16 +133,42 @@
               "lookahead": 2
             },
             { "channel":  "TV3N",
-              "lookahead": 1
+              "lookahead": 2
             },
             { "channel":  "TV3S",
               "lookahead": 2
             },
             { "channel":  "TV3+N",
-              "lookahead": 1
+              "lookahead": 2
             },
             { "channel":  "TV6S",
               "lookahead": 2
+            }
+          ]
+      },
+      {
+        "day": "Thursday",
+        "lookahead": 3,
+        "cutOffTime": "19:00:00",
+        "channelLookahead":
+          [
+            { "channel":  "TV3+D",
+              "lookahead": 3
+            },
+            { "channel":  "TV3D",
+              "lookahead": 3
+            },
+            { "channel":  "TV3N",
+              "lookahead": 3
+            },
+            { "channel":  "TV3S",
+              "lookahead": 3
+            },
+            { "channel":  "TV3+N",
+              "lookahead": 3
+            },
+            { "channel":  "TV6S",
+              "lookahead": 3
             }
           ]
       },
